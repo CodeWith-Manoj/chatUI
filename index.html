@@ -9,7 +9,7 @@
     html, body {
         height: 100%;
         margin: 0;
-        padding: 15px;
+        padding: 0;
     }
     body{
         display: flex;
@@ -17,11 +17,16 @@
         align-items: center;
     }
     .container{
-        width: 20%;
-        height: 80%;
+        width: 350px; 
+        height: 90vh;
         background-image: url(./istockphoto-1403848173-612x612.jpg);
         box-shadow: 2px 5px 10px rgb(170, 161, 219);
         transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        overflow: hidden;
+        min-height: 60px;
     }
     .container:hover{
         transform: scale(1.08);
@@ -34,6 +39,7 @@
     }
     .head{
         width: 100%;
+        min-height: 60px;
         height: 5%;
         background-color: rgb(255, 255, 255);
         display: flex;
@@ -137,4 +143,4 @@ input:focus {
         </div>
     </div>
 </body>
-</html>
+</html> 
